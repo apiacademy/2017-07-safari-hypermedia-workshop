@@ -26,3 +26,4 @@
 * [HAL-Forms](http://rwcbook.github.io/hal-forms/)
 * [Profile for Object Display (POD)](http://rwcbook.github.io/pod-spec/) 
 * [Web Service Transition Language (WeSTL)](http://rwcbook.github.io/wstl-spec/)
+* [Cj-Types Extensions](https://rwcbook.github.io/cj-types-spec/)
