@@ -3,7 +3,7 @@
  * service implementation (server)
  * plain-json
  * Mike Amundsen (@mamund)
-\ *******************************************************/
+ *******************************************************/
 
 // handles routing, conneg, response-representation
 
