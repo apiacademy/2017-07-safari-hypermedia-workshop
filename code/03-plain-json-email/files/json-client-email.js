@@ -37,6 +37,7 @@ function json() {
   g.actions = {
     collection: {href:"/", prompt:"All Tasks"},  
     item:       {href:"/{id}", prompt:"Item"},
+    filter:     {href:"/?{email}", prompt:"Filter By Email"},
     add:        {href:"/", prompt:"Add Task", method:"POST",
                   args:{
                     title: {value:"", prompt:"Title", required:true},
@@ -197,6 +198,21 @@ function json() {
     a.setAttribute("args", JSON.stringify(link.args));
     d.push(a,li);
     d.push(li, ul);
+
+    // filter
+    /*
+    li = d.node("li");
+    link = g.actions.filter;
+    a = d.anchor({
+      href:link.href,
+      rel:"collection",
+      className:"action",
+      text:link.prompt
+    });
+    a.onclick = httpGet;
+    d.push(a,li);
+    d.push(li, ul);
+    */
     
     d.push(ul, elm);
   }

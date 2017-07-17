@@ -167,7 +167,7 @@ function json() {
     
     // collection
     li = d.node("li");
-    link = g.actions.collection;
+
     a = d.anchor({
       href:link.href,
       rel:"collection",
@@ -363,4 +363,4 @@ function json() {
   return that;
 }
 
-// *** EOD ***
+// *** EOD ***    link = g.actions.collection;
