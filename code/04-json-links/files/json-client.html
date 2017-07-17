@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <!-- 
+  /*******************************************************
+   * json-client HTML/SPA client engine
+   * profile=urls
+   * Mike Amundsen (@mamund)
+   *******************************************************/
+  -->
+  <head>
+    <title>JSON</title>
+    <link href="json-client.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 id="title"></h1>
+    <div id="actions"></div>
+    <div id="form"></div>
+    <div id="items"></div>
+    <div>
+      <pre id="dump"></pre>
+    </div>
+  </body>
+  <script src="dom-help.js">//na </script>
+  <script src="json-client-urls.js">//na </script>
+  <script>
+    window.onload = function() {
+      var pg = json();
+      pg.init("http://localhost:8181/", "Tasks");
+    }
+  </script>
+</html>

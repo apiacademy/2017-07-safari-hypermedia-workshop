@@ -1,0 +1,21 @@
+{
+  todo: [
+	{
+	id: "1a14qx7qc81",
+	title: "Danny Boys",
+	completed: "false",
+	email: "mca@amundsen.com",
+	href: "//localhost:8181/1a14qx7qc81"
+	},
+
+	{
+	id: "youlsfa65y",
+	title: "NDC",
+	completed: "false",
+	href: "//localhost:8181/youlsfa65y"
+	}
+  ],
+  actions: {
+	collection: "//localhost:8181/"
+	}
+}
