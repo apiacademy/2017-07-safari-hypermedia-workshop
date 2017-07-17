@@ -37,7 +37,7 @@ function processDoc(object, mimeType, root) {
       doc = jsonforms(object, root);
       break;      
     default:
-      doc = repjson(object, root);
+      doc = json(object, root);
       break;
   }
 

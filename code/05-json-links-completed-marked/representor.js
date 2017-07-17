@@ -37,7 +37,7 @@ function processDoc(object, mimeType, root) {
       doc = jsonforms(object, root);
       break;      
     default:
-      doc = json(object, root);
+      doc = jsonurls(object, root);
       break;
   }
 
