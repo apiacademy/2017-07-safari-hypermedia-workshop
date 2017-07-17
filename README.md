@@ -24,5 +24,5 @@
 
 #### Supporting Formats
 * [HAL-Forms](http://rwcbook.github.io/hal-forms/)
-* [POD Spec](http://rwcbook.github.io/pod-spec/) 
+* [Profile for Object Display (POD)](http://rwcbook.github.io/pod-spec/) 
 * [Web Service Transition Language (WeSTL)](http://rwcbook.github.io/wstl-spec/)
