@@ -1,6 +1,6 @@
 /*******************************************************
  * task service implementation
- * json representor w/ POD profile (server)
+ * json representor w/ FORM profile (server)
  * Mike Amundsen (@mamund)
  *******************************************************/
 
@@ -107,29 +107,8 @@ function json(object) {
 
         // annotated data
         for(i=0,x=object[p].length;i<x;i++) {
-          if(object[p][i].meta) {
-            object[p][i].link = object[p][i].meta;
-            object[p][i].link.prompt = "Item";
-            delete object[p][i].meta;
-          }
-          if(object[p][i].id) {
-            object[p][i].id = {value:object[p][i].id,prompt:"ID",render:"true"};
-          }
-          if(object[p][i].title){
-            object[p][i].title = {value:object[p][i].title,prompt:"Title",render:"true"};
-          }
-          if(object[p][i].completed){
-            object[p][i].completed = {value:object[p][i].completed,prompt:"Status",render:"true"};
-          }
-          if(object[p][i].email){
-            object[p][i].email = {value:object[p][i].email,prompt:"Email",render:"true"};
-          }
-          if(object[p][i].tags){
-            object[p][i].tags = {value:object[p][i].tags,prompt:"Tags",render:"true"};
-          }
-          if(object[p][i].description){
-            object[p][i].description = {value:object[p][i].description,prompt:"Description",render:"true"};
-          }
+          object[p][i].href = object[p][i].meta.href;
+          delete object[p][i].meta;
         } 
       } 
       break;

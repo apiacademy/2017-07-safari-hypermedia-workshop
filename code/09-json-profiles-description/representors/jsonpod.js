@@ -59,6 +59,7 @@ function json(object) {
                 method:"POST",
                 args : {
                     title: {value:"", prompt:"Title", required:true},
+                    description: {value:"", prompt:"Description", required:false},
                     email: {value:"", prompt:"Email", required:false},
                     completed: {value:"false", prompt:"Completed", pattern:"^(true|false)$"},
                     tags: {value:"", prompt:"Tags", required:false}
@@ -74,6 +75,7 @@ function json(object) {
                 args:{
                   id: {value:"{id}", prompt:"Id", readOnly:true},
                   title: {value:"{title}", prompt:"Title", required:true},
+                  description: {value:"{description}", prompt:"Description", required:false},
                   email: {value:"{email}", prompt:"Email", required:false},
                   completed: {value:"{completed}", prompt:"Completed", pattern:"^(true|false)$"},
                   tags: {value:"{tags}", prompt:"Tags", required:false}
