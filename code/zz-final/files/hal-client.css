@@ -43,4 +43,4 @@ form input:read-only {background-color:silver;}
 #embedded dd {margin-bottom:.8em;}
 #embedded dt {padding-left:125px;}
 
-#dump {display:none;}
+#dump {display:block;}

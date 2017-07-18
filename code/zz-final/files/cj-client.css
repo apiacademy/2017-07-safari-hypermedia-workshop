@@ -49,4 +49,4 @@ form input[type=submit] {margin-left:150px;font-weight:bold;}
 #error {color:red; font-weight:bold;clear:both;}
 #error p {margin:0}
 
-#dump {display:none;}
+#dump {display:block;}

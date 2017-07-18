@@ -11,8 +11,7 @@
   - built/tested for chrome browser (YMMV on other browsers)
 
   ISSUES:
-  - memorized the serialized msg for "todo" object array & three fields
-  - memorized all seven documented actions and associated args, HTTP details
+  - memorized the serialized msg for "todo" object array & fields
   - will ignore non-breaking changes from server (new actions, objects, fields)
   - will crash on breaking changes from server (changed actions, objects, fields)
 */

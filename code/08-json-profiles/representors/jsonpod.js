@@ -109,7 +109,7 @@ function json(object) {
         for(i=0,x=object[p].length;i<x;i++) {
           if(object[p][i].meta) {
             object[p][i].link = object[p][i].meta;
-            object[p][i].link.prompt = "Item";
+            object[p][i].link.prompt = "View";
             delete object[p][i].meta;
           }
           if(object[p][i].id) {
